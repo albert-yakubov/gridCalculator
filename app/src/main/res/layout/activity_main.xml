@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+<GridLayout
+    xmlns:grid="http://schemas.android.com/apk/res-auto"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_margin="1dp"
+            android:id="@+id/gridLayout"
+        android:layout_centerHorizontal="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginLeft="40dp"
+        android:paddingRight="16dp"
+        android:layout_gravity="end"
+        android:columnCount="4"
+        android:layout_column="@android:integer/config_longAnimTime"
+            android:rowCount="5"
+    android:layout_marginStart="40dp"
+    android:paddingEnd="16dp">
+            <Button
+
+                android:text="C" />
+
+            <Button
+                android:text="BS" />
+
+            <Button
+                android:text="/" />
+
+            <Button
+                android:text="x" />
+
+            <Button
+                android:text="7" />
+
+            <Button
+                android:text="8" />
+
+            <Button
+                android:text="9" />
+
+            <Button
+                android:text="-" />
+
+            <Button
+                android:text="4" />
+
+            <Button
+                android:text="5" />
+
+            <Button
+                android:text="6" />
+
+            <Button
+                android:text="+" />
+
+            <Button
+                android:text="1" />
+
+            <Button
+                android:text="2" />
+
+            <Button
+                android:text="3" />
+
+            <Button
+                android:layout_gravity="fill_vertical"
+                android:layout_rowSpan="2"
+                android:text="=" />
+            <Button
+                android:layout_gravity="fill_horizontal"
+                android:layout_columnSpan="2"
+                android:text="0" />
+            <Button
+                android:text="." />
+        </GridLayout>
+
+
